@@ -12,13 +12,9 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/MemoryGame.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body style="background-color: rgb(26, 27, 28)">
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 800px; height: 600px"></div>
-      <div class="footer">
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title" style="color: white">MemoryGame</div>
-      </div>
+  <body style="background-color: rgb(26, 27, 28);">
+    <div class="webgl-content" style="width: 100%; height: 100%;">
+      <div id="unityContainer" style="width: 100%; height: 100%;"></div>
     </div>
   </body>
 </html>
