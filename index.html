@@ -9,14 +9,15 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/html5.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/MemoryGame.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body style="background-color: rgb(26, 27, 28)">
     <div class="webgl-content">
       <div id="unityContainer" style="width: 800px; height: 600px"></div>
       <div class="footer">
-        <div class="title">MemoryGame</div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title" style="color: white">MemoryGame</div>
       </div>
     </div>
   </body>
